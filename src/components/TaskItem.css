@@ -1,0 +1,84 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  width: 1100px;
+  margin-left: 180px;
+  border-bottom: 1px solid #ccc;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0px 3px  20px blue;
+}
+
+.task-name-container {
+  flex: 1;
+  margin-right: 10px; 
+  min-width: 200px; 
+}
+
+.task-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.task-button {
+  cursor: pointer;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 500px;
+  margin-top: 7px;
+  align-content: flex-end;
+  border: 1px black;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.modal-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-save-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-save-button:hover {
+  background-color: #0056b3;
+}
+
+
+.task-button .faCheck, .task-button .faEdit, .task-button .faTrash {
+  font-size: 16px;
+}
